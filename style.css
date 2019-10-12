@@ -69,8 +69,10 @@ section > div {
 }
 
 .left-date input:focus {
-    transform: scale(1.5);
+    background: #bbbbbb;
     transition: .2s;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .left-date input:hover {
@@ -106,8 +108,6 @@ form {
 .button > input:hover {
   background: #bbbbbb;
   border-color: #ffffff;
-  transform: scale(2);
-  transition: .2s;
 }
 
 .button > input:focus {
