@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <section class="main">
+          <script>
+          var today = new Date();
+          var year = today.getUTCFullYear();
+          console.log(year)
+          </script>
+            <form name="form">
+                <div class="left">ФИО: </div>
+                <br>
+                <div class="left-date">Фамилия: </div>
+                <div class="left-date">
+                    <input type="text" name="surname" placeholder="Surname..."/>
+                </div>
+                <div class="left-date">Имя: </div>
+                <div class="left-date">
+                    <input type="text" name="Firstname" placeholder="Name..."/>
+                </div>
+                <div class="left-date">Отчество: </div>
+                <div class="left-date">
+                    <input type="text" name="middlename" placeholder="Middle name..."/>
+                </div>
+                <div class="left">Дата Рождения: </div>
+                <br>
+                <div class="left-date">День: </div>
+                <div class="left-date">
+                    <input type="number" name="day" placeholder="Day..." min="1" max="31"/>
+                </div>
+                <div class="left-date">Месяц: </div>
+                <div class="left-date">
+                    <input type="number" name="month" placeholder="Month..." min="1" max="12"/>
+                </div>
+                <div class="left-date">Год: </div>
+                <div class="left-date">
+                    <input type="number" name="year" placeholder="Year..." min="1919" max="2019"/>
+                </div>
+                <div class="button"><input type="button" name="submit" value="Submit" onclick="onSubmit()"/></div>
+            </form>
+        </section>
+    </body>
+</html>
